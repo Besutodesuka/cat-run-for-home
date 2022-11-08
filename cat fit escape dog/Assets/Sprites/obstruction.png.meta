@@ -1,10 +1,52 @@
 fileFormatVersion: 2
-guid: c507cb628b662034e8b11f7fe6bdc472
+guid: 0c12d580599bfe543a052cde8ec2c2fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9020587741837801094
-    second: Sprites_Chrome_Dinousaur_9
+      213: -9131873118118784294
+    second: obstruction_0
+  - first:
+      213: 6916872210235366281
+    second: obstruction_1
+  - first:
+      213: 6083510539687240152
+    second: obstruction_2
+  - first:
+      213: 6126034328463835409
+    second: obstruction_3
+  - first:
+      213: 7160663127707448464
+    second: obstruction_4
+  - first:
+      213: 5158696972916196013
+    second: obstruction_5
+  - first:
+      213: -4201521292980885940
+    second: obstruction_6
+  - first:
+      213: 7790575437954722351
+    second: obstruction_7
+  - first:
+      213: -1830502421446281369
+    second: obstruction_8
+  - first:
+      213: 3104085016103776282
+    second: obstruction_9
+  - first:
+      213: -9105140450990653238
+    second: obstruction_10
+  - first:
+      213: 4221136619696719360
+    second: obstruction_11
+  - first:
+      213: 3562503882436521672
+    second: obstruction_12
+  - first:
+      213: 6087466464510669696
+    second: obstruction_13
+  - first:
+      213: 8256515064482043731
+    second: obstruction_14
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -35,7 +77,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,12 +137,180 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_0
+      name: obstruction_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 36
-        width: 36
+        x: 20
+        y: 400
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2579428c1154180800000000000000
+      internalID: -9131873118118784294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 400
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b99d7c0aaadff50800000000000000
+      internalID: 6916872210235366281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 400
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d12761aa98fc6450800000000000000
+      internalID: 6083510539687240152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 400
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1118fedb3cb040550800000000000000
+      internalID: 6126034328463835409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 276
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0947d330d29cf5360800000000000000
+      internalID: 7160663127707448464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 276
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da28d8e909f579740800000000000000
+      internalID: 5158696972916196013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 272
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4662a705a231b5c0800000000000000
+      internalID: -4201521292980885940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_7
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 272
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2aac27a51fad1c60800000000000000
+      internalID: 7790575437954722351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obstruction_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 172
+        width: 88
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -109,20 +319,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4976f50f6597a6a40800000000000000
-      internalID: 5362231720644929428
+      spriteID: 767b3310fbfb896e0800000000000000
+      internalID: -1830502421446281369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_1
+      name: obstruction_9
       rect:
         serializedVersion: 2
-        x: 42
-        y: 55
-        width: 46
-        height: 13
+        x: 148
+        y: 164
+        width: 88
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +340,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed406cc0e53b9a50800000000000000
-      internalID: 6528871324421475819
+      spriteID: a107a7140ece31b20800000000000000
+      internalID: 3104085016103776282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_2
+      name: obstruction_10
       rect:
         serializedVersion: 2
-        x: 90
-        y: 28
-        width: 46
-        height: 34
+        x: 276
+        y: 144
+        width: 88
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +361,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 135da81369721bde0800000000000000
-      internalID: -1319229689813084879
+      spriteID: ac089ac300b04a180800000000000000
+      internalID: -9105140450990653238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_3
+      name: obstruction_11
       rect:
         serializedVersion: 2
-        x: 141
-        y: 38
-        width: 46
-        height: 30
+        x: 404
+        y: 172
+        width: 88
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +382,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72d3a01e23edfd320800000000000000
-      internalID: 2585029021239229735
+      spriteID: 0068a6d146d749a30800000000000000
+      internalID: 4221136619696719360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_4
+      name: obstruction_12
       rect:
         serializedVersion: 2
-        x: 189
-        y: 33
-        width: 17
-        height: 35
+        x: 20
+        y: 16
+        width: 88
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +403,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a5d3c98d066790d0800000000000000
-      internalID: -3416149584005311064
+      spriteID: 8ce2497f76e807130800000000000000
+      internalID: 3562503882436521672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_5
+      name: obstruction_13
       rect:
         serializedVersion: 2
-        x: 211
-        y: 32
-        width: 34
-        height: 35
+        x: 148
+        y: 16
+        width: 88
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,20 +424,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d633119de4c8dd970800000000000000
-      internalID: 8781329118719456109
+      spriteID: 083f2472f760b7450800000000000000
+      internalID: 6087466464510669696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_6
+      name: obstruction_14
       rect:
         serializedVersion: 2
-        x: 250
-        y: 32
-        width: 51
-        height: 35
+        x: 276
+        y: 36
+        width: 88
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,281 +445,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea08cab2ba30df560800000000000000
-      internalID: 7349034200645533870
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_7
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 18
-        width: 25
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c1ed8db4ee505420800000000000000
-      internalID: 2616695720028004806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_8
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 18
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bda3ae6d5dbca30b0800000000000000
-      internalID: -5748057855090869541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_10
-      rect:
-        serializedVersion: 2
-        x: 394
-        y: 18
-        width: 75
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2ce87234744c9210800000000000000
-      internalID: 1341022054903245868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_12
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 21
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d24b58fa6413120b0800000000000000
-      internalID: -5755264669140536275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_13
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 21
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 820ff5c0180279420800000000000000
-      internalID: 2636611845479198760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_14
-      rect:
-        serializedVersion: 2
-        x: 562
-        y: 21
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f8497e866e90dca0800000000000000
-      internalID: -5994116940715964176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_15
-      rect:
-        serializedVersion: 2
-        x: 606
-        y: 21
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 509d4866c967ead00800000000000000
-      internalID: 985855782547675397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_16
-      rect:
-        serializedVersion: 2
-        x: 650
-        y: 21
-        width: 44
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e267928deeb609c0800000000000000
-      internalID: -3961268894918286622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_17
-      rect:
-        serializedVersion: 2
-        x: 696
-        y: 23
-        width: 40
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 89526b32180553890800000000000000
-      internalID: -7478983090598697576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_18
-      rect:
-        serializedVersion: 2
-        x: 738
-        y: 21
-        width: 59
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ffc15c643cf381f0800000000000000
-      internalID: -1043713386534023176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_19
-      rect:
-        serializedVersion: 2
-        x: 802
-        y: 21
-        width: 59
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37f41e1f557a78490800000000000000
-      internalID: -7744037046668144781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_20
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 600
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52a7398a917e17bc0800000000000000
-      internalID: -3786991714253440475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprites_Chrome_Dinousaur_9
-      rect:
-        serializedVersion: 2
-        x: 603
-        y: 1
-        width: 600
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a79c38eed3f60d280800000000000000
-      internalID: -9020587741837801094
+      spriteID: 3571d1dc4b8059270800000000000000
+      internalID: 8256515064482043731
       vertices: []
       indices: 
       edges: []

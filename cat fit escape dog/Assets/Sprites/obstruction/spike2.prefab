@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7275839285067684729}
   - component: {fileID: 3246053994560198741}
   - component: {fileID: -8319651756851051838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spike2
-  m_TagString: Untagged
+  m_TagString: obstruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

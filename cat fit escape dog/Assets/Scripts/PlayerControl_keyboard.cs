@@ -31,6 +31,7 @@ public class PlayerControl_keyboard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         // jump and start game 
         if (Input.GetKey("up") && isjumpped == false){
                 // jump action
@@ -39,6 +40,7 @@ public class PlayerControl_keyboard : MonoBehaviour
                 GlobalParameter.gamemode = 1;
             }
         if (GlobalParameter.gamemode == 1){
+            ScoreManager.score += Time.deltaTime*4/3;
             if (isjumpped == true){
                 speed = 1;
             }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerHurt : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject GameoverMenu;
+    public GameObject heathbarMenu;
     void Start()
     {
         
@@ -22,6 +24,8 @@ public class PlayerHurt : MonoBehaviour
             if(HealthHeartManager.health <= 0){
                 GlobalParameter.gamemode = 2;//game over
                 gameObject.SetActive(false);
+                heathbarMenu.SetActive(false);
+                GameoverMenu.SetActive(true);
             } else{
                 //make player invisible a second
                 StartCoroutine(GetHurt());

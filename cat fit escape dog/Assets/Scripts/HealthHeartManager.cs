@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class HealthHeartManager : MonoBehaviour
 {
-    public static int health = 3;
+    public static int health;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
     // Start is called before the first frame update
     void Start()
     {
-
+        health = 3;
     }
 
     // Update is called once per frame

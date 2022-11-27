@@ -26,7 +26,7 @@ public class PlayerControl_keyboard : MonoBehaviour
         isRun = false;
         speed = 0;
         collider = GetComponent<BoxCollider2D>();
-        collider.size = standingsize;
+        //collider.size = standingsize;
     }
     // Update is called once per frame
     void Update()
@@ -53,7 +53,7 @@ public class PlayerControl_keyboard : MonoBehaviour
 
                 isRun = false;
 
-                collider.size = standingsize;
+                //collider.size = standingsize;
             } 
             else if (Input.GetKey("down") && isjumpped == false){
                 // Slide action
@@ -71,7 +71,7 @@ public class PlayerControl_keyboard : MonoBehaviour
                 speed = Mathf.Min(1,speed+1);
 
 
-                collider.size = standingsize;
+                //collider.size = standingsize;
             }
             else{
                 // Idle action
@@ -80,7 +80,7 @@ public class PlayerControl_keyboard : MonoBehaviour
 
                 animator.SetBool("isslide",false);
 
-                collider.size = standingsize;
+                //collider.size = standingsize;
             }
             GlobalParameter.global_speed = speed;
             animator.SetFloat("speed",speed);
@@ -91,7 +91,7 @@ public class PlayerControl_keyboard : MonoBehaviour
         isjumpped = false;
         animator.SetBool("isjump",false);
         animator.SetBool("isslide",false);
-        collider.size = standingsize;
+        //collider.size = standingsize;
     }
 }
 

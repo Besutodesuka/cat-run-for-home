@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7275839285067684729}
   - component: {fileID: 3246053994560198741}
   - component: {fileID: -8319651756851051838}
+  - component: {fileID: 7375869867901171493}
   m_Layer: 8
   m_Name: spike2
   m_TagString: obstruction
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7275839285067684735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.92, y: -0.80839646, z: 1.5742362}
+  m_LocalPosition: {x: 10.92, y: -1.12, z: 1.5742362}
   m_LocalScale: {x: 0.4254, y: 0.6982, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,3 +132,24 @@ PolygonCollider2D:
       - {x: 1.3000001, y: -1.3000001}
       - {x: 2.1000001, y: -0.5}
       - {x: 2.2, y: -0.25}
+--- !u!50 &7375869867901171493
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7275839285067684735}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

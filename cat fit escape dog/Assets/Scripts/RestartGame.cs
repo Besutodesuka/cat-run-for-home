@@ -24,6 +24,10 @@ public class RestartGame : MonoBehaviour
         // ScoreManager.score = 0;
         // GlobalParameter.gamemode  = 0;
         // HealthHeartManager.health = 3;
+        //close camera by call on destroy
+        
+        // dispose model
+        // PoseVisuallizer.detecter.Dispose();
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using System.Collections.Generic;
 
 public class WebCamInput : MonoBehaviour
 {
@@ -20,30 +22,36 @@ public class WebCamInput : MonoBehaviour
     void Start()
     {
         if (inputRT != null || webCamTexture != null) {
-            resetCamera();
+            try{
+                resetCamera();
+            }finally{}
         }
         if(staticInput == null){
             webCamTexture = new WebCamTexture(webCamName, (int)webCamResolution.x, (int)webCamResolution.y);
-            webCamTexture.Play();
         }
-
+        webCamTexture.Play();
         inputRT = new RenderTexture((int)webCamResolution.x, (int)webCamResolution.y, 0);
+        
     }
 
     void Update()
     {
-        if(staticInput != null) return;
-        if(!webCamTexture.didUpdateThisFrame) return;
+        // if (!webCamTexture.isPlaying) webCamTexture.Play();
+        try{
+            if(staticInput != null) return;
+            if (webCamTexture != null)if(!webCamTexture.didUpdateThisFrame) return;
+            var aspect1 = (float)webCamTexture.width / webCamTexture.height;
+            var aspect2 = (float)inputRT.width / inputRT.height;
+            var aspectGap = aspect2 / aspect1;
 
-        var aspect1 = (float)webCamTexture.width / webCamTexture.height;
-        var aspect2 = (float)inputRT.width / inputRT.height;
-        var aspectGap = aspect2 / aspect1;
+            var vMirrored = webCamTexture.videoVerticallyMirrored;
+            var scale = new Vector2(aspectGap, vMirrored ? -1 : 1);
+            var offset = new Vector2((1 - aspectGap) / 2, vMirrored ? 1 : 0);
+            Graphics.Blit(webCamTexture, inputRT, scale, offset);
+        }catch{
 
-        var vMirrored = webCamTexture.videoVerticallyMirrored;
-        var scale = new Vector2(aspectGap, vMirrored ? -1 : 1);
-        var offset = new Vector2((1 - aspectGap) / 2, vMirrored ? 1 : 0);
-
-        Graphics.Blit(webCamTexture, inputRT, scale, offset);
+        }
+        
     }
 
     public void resetCamera(){

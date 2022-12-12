@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/main.unity
     guid: d6550b0a7898ac34aa847abd2ea66070
   - enabled: 1
+    path: Assets/Scenes/PoseConfirm.unity
+    guid: 7d304d8e8ba7380458d42b3979290c06
+  - enabled: 1
     path: Assets/Scenes/ingamecontrolable.unity
     guid: ed2cd499d76cfbf43b0302df847a2937
   - enabled: 1

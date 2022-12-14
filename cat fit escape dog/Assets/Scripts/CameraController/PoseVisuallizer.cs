@@ -183,7 +183,7 @@ public class PoseVisuallizer : MonoBehaviour
             // update bar position for visualization
             Vector3 pos = new Vector3(
                 CamView_rectTransform.rect.width - inputImageUI.rectTransform.rect.width/2,
-                screen_h * height + CamView_rectTransform.position.y - screen_h/2,
+                screen_h * height + inputImageUI.rectTransform.position.y- screen_h/2,
                 0
             );
             rectTransform.position = pos;

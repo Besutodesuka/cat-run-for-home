@@ -14,10 +14,12 @@ public class PoseVisuallizer : MonoBehaviour
     [SerializeField] GameObject canvas;
     [SerializeField] Shader shader;
     [SerializeField, Range(0, 1)] float humanExistThreshold = 0.8f;
-    [SerializeField, Range(0, 1)] float handjoinThreshold = 0.0085f;
+    [SerializeField, Range(0, 1)] float handjoinThreshold = 0.8f;
     // for pose confirm page
     [SerializeField] GameObject startbutton;
     [SerializeField] GameObject instrction_text;
+    [SerializeField] GameObject Pausebutton;
+    [SerializeField] GameObject Handjoinbar;
 
     Material material;
     BlazePoseDetecter detecter;
@@ -28,10 +30,15 @@ public class PoseVisuallizer : MonoBehaviour
     RectTransform action_rectTransform;
     RectTransform CamView_rectTransform;
 
-    public static float action_thredshold = 0;
+    public static float action_thredshold = 0.5f;
+    PauseMenu pausescript;
     float count_pause = 0;
+    Slider handjoinbar;
 
     public static string input_pose;
+
+    
+    
 
     // Lines count of body's topology.
     const int BODY_LINE_NUM = 35;
@@ -63,22 +70,27 @@ public class PoseVisuallizer : MonoBehaviour
         Vector4 l_hand = detecter.GetPoseLandmark(15);
         Vector4 r_hand = detecter.GetPoseLandmark(16);
         if (r_hand.w > humanExistThreshold && l_hand.w > humanExistThreshold){
-            float eclidean_dis = (float) Math.Sqrt(Math.Pow(l_hand.y - r_hand.y, 2) + Math.Pow(r_hand.x - r_hand.x, 2));
-            if (eclidean_dis < handjoinThreshold){
+            float eclidean_dis = (float) Math.Sqrt(Math.Pow(l_hand.y - r_hand.y, 2) + Math.Pow(l_hand.x - r_hand.x, 2));
+            Debug.LogFormat("count :{0} {1}", count_pause, eclidean_dis);
+            if ((eclidean_dis > 0.60) && (l_hand.y - r_hand.y < 0.01f) ){
                 // hand joined count timer
+                // TODO: visualize progress bar
+                handjoinbar.value = count_pause / timer;
                 count_pause += Time.deltaTime;
+                
                 Debug.LogFormat("count :{0} {1}", count_pause, eclidean_dis);
             } else{
                 count_pause = 0;
             }
             if (count_pause >= timer){
                 // fix new action_thredshold
-                action_thredshold = (right.y + left.y)/2;
                 // reset counter
                 count_pause = 0;
-                Debug.LogFormat("{0} {1}", "changed mode", action_thredshold);
+                // Debug.LogFormat("{0} {1}", "changed mode", action_thredshold);
                 return true;
             }
+        }else{
+            count_pause = 0;
         }
         return false;
     }
@@ -108,7 +120,10 @@ public class PoseVisuallizer : MonoBehaviour
         rectTransform = Visuallizer.GetComponent<RectTransform>();
         action_rectTransform = Action_Threshold.GetComponent<RectTransform>();
         CamView_rectTransform = canvas.GetComponent<RectTransform>();
+        try{pausescript = Pausebutton.GetComponent<PauseMenu>();}
+        catch{}
         count_pause = 0;
+        handjoinbar = Handjoinbar.GetComponent<Slider>();
         // rectTransform.transfor
     }
 
@@ -134,17 +149,20 @@ public class PoseVisuallizer : MonoBehaviour
         if (ChangeMode){
             // from start menu
             if (GlobalParameter.gamemode == 0){
+                // check scene if in pose scene then do this
                 try{
                      // show button for continue
                     startbutton.SetActive(true);
                     // load in game scene
                     instrction_text.SetActive(false);
+                    action_thredshold = (right.y + left.y)/2;
                 }catch{
 
                 }
             //from in game scene
             } else if (GlobalParameter.gamemode == 1){
                 // go to pause scene
+                pausescript.Invoke("Pause", 0.1f);
             }
         }
 
@@ -176,7 +194,7 @@ public class PoseVisuallizer : MonoBehaviour
 
             Vector3 action_pos = new Vector3(
                 CamView_rectTransform.rect.width - inputImageUI.rectTransform.rect.width/2,
-                action_thredshold * screen_h + CamView_rectTransform.position.y - screen_h/2,
+                action_thredshold * screen_h + inputImageUI.rectTransform.position.y - screen_h/2,
                 0
             );
             action_rectTransform.position = action_pos;

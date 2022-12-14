@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
 	    }
         
     	public void Resume(){
+                // count down 3 seconds
             pauseMenu.SetActive(false);
             Time.timeScale = 1f;    
 	    }
@@ -21,10 +22,11 @@ public class PauseMenu : MonoBehaviour
     	public void Restart(){
             Time.timeScale = 1f;    
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex/*game scene*/);
-	    }
+	}
 
     	public void Home(){
-            Time.timeScale = 1f;    
+            Time.timeScale = 1f;
+            GlobalParameter.gamemode = 0;
             SceneManager.LoadScene(sceneName);
 	    }
 }

@@ -16,17 +16,28 @@ public class spawner : MonoBehaviour
     private float timer = 0;
     private float maxtimer_temp;
     public int floating;
+    bool trigger;
+
+    IEnumerator waiter(int sec){
+        yield return new WaitForSeconds(sec);
+    }
 
     void Start()
     {
         maxtimer_temp = maxtimer;
+        trigger = false;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GlobalParameter.gamemode == 1){
+        if (GlobalParameter.gamemode == 1 && !trigger){
+            //wait 3 sec before generate
+            waiter(3);
+            trigger = true;
+        }
+        if (trigger){
             if (timer > maxtimer_temp){
                 // spawn one of objects in obeject list
                 GameObject target_obj;

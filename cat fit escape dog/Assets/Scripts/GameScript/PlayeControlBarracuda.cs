@@ -46,7 +46,7 @@ public class PlayeControlBarracuda : MonoBehaviour
             if (isjumpped == true){
                 speed = 1;
             }
-            else if (Input.GetKey("up") && isjumpped == false){
+            else if ((Input.GetKey("up") || PoseVisuallizer.input_pose == "jump") && isjumpped == false){
                 // jump action
                 body.velocity = new Vector3(0,height,0); // make player jump
                 isjumpped = true;
@@ -57,7 +57,7 @@ public class PlayeControlBarracuda : MonoBehaviour
 
                 //collider.size = standingsize;
             } 
-            else if (Input.GetKey("down") && isjumpped == false){
+            else if ((Input.GetKey("down") || PoseVisuallizer.input_pose == "slide") && isjumpped == false){
                 // Slide action
                 animator.SetBool("isslide",true);
 
@@ -71,7 +71,6 @@ public class PlayeControlBarracuda : MonoBehaviour
             else if ((Input.GetKey("right") == true) && (isjumpped == false)){
                 // Run action
                 speed = Mathf.Min(1,speed+1);
-
 
                 //collider.size = standingsize;
             }

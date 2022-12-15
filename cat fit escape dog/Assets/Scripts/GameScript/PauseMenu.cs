@@ -20,8 +20,9 @@ public class PauseMenu : MonoBehaviour
 	    }
         
     	public void Restart(){
-            Time.timeScale = 1f;    
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex/*game scene*/);
+            Time.timeScale = 1f;
+            GlobalParameter.gamemode = 1;   
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex/*game scene*/);
 	}
 
     	public void Home(){

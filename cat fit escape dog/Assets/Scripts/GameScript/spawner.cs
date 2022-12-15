@@ -37,7 +37,7 @@ public class spawner : MonoBehaviour
             waiter(3);
             trigger = true;
         }
-        if (trigger){
+        if (GlobalParameter.gamemode == 1 && trigger){
             if (timer > maxtimer_temp){
                 // spawn one of objects in obeject list
                 GameObject target_obj;

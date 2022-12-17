@@ -28,6 +28,7 @@ public class PlayeControlBarracuda : MonoBehaviour
         isRun = false;
         speed = 0;
         collider = GetComponent<BoxCollider2D>();
+        GlobalParameter.gamemode = 0;
         //collider.size = standingsize;
     }
     // Update is called once per frame

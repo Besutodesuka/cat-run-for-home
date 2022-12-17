@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ingamecontrolable.unity
     guid: ed2cd499d76cfbf43b0302df847a2937
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LoseScene.unity
     guid: 0e68ae9bea0438e468431fdd896214b5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/manual.unity
     guid: 134585bde85f13143ad4663cf0536701
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/option.unity
     guid: 5da0b2b0ef251994585d928b5c456986
   m_configObjects: {}

@@ -9,7 +9,7 @@ public class PlayerHurt : MonoBehaviour
     public GameObject heathbarMenu;
     void Start()
     {
-        
+        Physics2D.IgnoreLayerCollision(7,8,false);
     }
 
     // Update is called once per frame
@@ -19,8 +19,10 @@ public class PlayerHurt : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D col){
+        // Debug.LogFormat("hurt");
         if(col.transform.tag == "obstruction"){
             HealthHeartManager.health--;
+            // Debug.LogFormat("hurt from obstruct");
             if(HealthHeartManager.health <= 0){
                 GlobalParameter.gamemode = 2;//game over
                 gameObject.SetActive(false);

@@ -1119,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2104233659}
+  heathbarMenu: {fileID: 0}
   sceneName: 
 --- !u!114 &657273814
 MonoBehaviour:
@@ -1729,6 +1730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  heathbarMenu: {fileID: 0}
   sceneName: main
 --- !u!114 &933413309
 MonoBehaviour:
@@ -2241,6 +2243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1277597244}
+  heathbarMenu: {fileID: 2082502349}
   sceneName: 
 --- !u!114 &1078714451
 MonoBehaviour:
@@ -2866,6 +2869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2104233659}
+  heathbarMenu: {fileID: 2082502349}
   sceneName: 
 --- !u!114 &1287070367
 MonoBehaviour:
@@ -3474,6 +3478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1277597244}
+  heathbarMenu: {fileID: 0}
   sceneName: main
 --- !u!114 &1441984829
 MonoBehaviour:
@@ -3779,6 +3784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2121030353}
+  heathbarMenu: {fileID: 2082502349}
   sceneName: 
 --- !u!1 &1586498930
 GameObject:
@@ -4007,6 +4013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2104233659}
+  heathbarMenu: {fileID: 0}
   sceneName: 
 --- !u!114 &1626667204
 MonoBehaviour:
@@ -5024,6 +5031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2121030353}
+  heathbarMenu: {fileID: 0}
   sceneName: main
 --- !u!1 &1968694921
 GameObject:

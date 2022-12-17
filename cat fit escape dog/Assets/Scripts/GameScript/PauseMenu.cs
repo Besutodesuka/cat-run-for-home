@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+//     [SerializeField] GameObject heathbarMenu;
     public string sceneName;
     
     	public void Pause(){
@@ -21,7 +22,9 @@ public class PauseMenu : MonoBehaviour
         
     	public void Restart(){
             Time.timeScale = 1f;
-            GlobalParameter.gamemode = 1;   
+        //     gameObject.SetActive(false);
+            GlobalParameter.gamemode = 0;
+        //     heathbarMenu.SetActive(false);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex/*game scene*/);
 	}
 
